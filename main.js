@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			if(isNaN(tempF)) {
 			document.querySelector("h4").innerText = "That is not a temperature, idiot! Enter a number.";
 		    } else if(tempC > 0) {
-		    	document.querySelector("h4").style.color = "red";
+		    	document.querySelector(".top-color").style.backgroundColor = "red";
 		    	document.querySelector("h4").innerText = "The Temperature in Celsius is: " + tempC + " C";
 		    } else {
-		    	document.querySelector("h4").style.color = "blue";
+		    	document.querySelector(".top-color").style.backgroundColor = "#9D9AF5";
 		    	document.querySelector("h4").innerText = "The Temperature in Celsius is: " + tempC + " C";
 		    }
 	});
